@@ -58,16 +58,8 @@ public class LoadGameServer extends JFrame {
 	          // Listen for a new connection request
 	          socket = serverSocket.accept();
 	          
-	          // receive a load game attempt from the client
-//	          DataInputStream fromClient = new DataInputStream(socket.getInputStream());
-//	          int attempt = fromClient.readInt();
-	          
-	          // when the attempt is made, show the load game frame
-//	          if (attempt == 1) {
-	        	  System.out.println("Load Server started serving for the client.");
-	        	  LoadGame();
-//	          }
-	        	  
+		  System.out.println("Load Server started serving for the client.");
+		  LoadGame();
 	        }
 	        
 		} catch(IOException ex) {
